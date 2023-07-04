@@ -1,0 +1,35 @@
+{
+  "name": "vector",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "nodemon --watch ./src -e html,js,vue,css --exec \"npm run build\" ",
+    "build": "parcel build ./src/index.html --dist-dir ./appscript",
+    "glogin": "clasp login",
+    "glogout": "clasp logout",
+    "gpull": "clasp pull",
+    "gpush": "clasp push",
+    "gcreate": "clasp create --title \"New Dasboard Project\" --rootDir ./appscript",
+    "gstart": "clasp push --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@parcel/transformer-vue": "^2.8.3",
+    "@vue-leaflet/vue-leaflet": "^0.9.0",
+    "leaflet": "^1.9.3",
+    "nodemon": "^2.0.22",
+    "vue2-leaflet": "^2.7.1",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "leaflet": "latest",
+    "pinia": "^2.0.33",
+    "vue": "^3.2.8",
+    "vue3-leaflet": "^1.0.43",
+    "vue2-leaflet": "^2.7.1"
+  }
+}
